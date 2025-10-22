@@ -7,38 +7,39 @@ build/
 dist/
 *.egg-info/
 
-
+# Virtual Environment
 venv/
 env/
 ENV/
 
-# secrets
+# Environment Variables (IMPORTANT - don't commit secrets!)
 .env
 .env.local
 .env.production
 
+# Logs
 *.log
 logs/
 
-
+# Data files (keep structure, not actual data)
 data/raw/*.csv
 data/processed/*.parquet
 
-
+# Models
 models/*.pkl
 models/*.joblib
 *.model
 
-
+# OS files
 .DS_Store
 Thumbs.db
 
-
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 
-
+# Database
 *.db
 *.sqlite3
