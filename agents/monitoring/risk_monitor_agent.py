@@ -311,11 +311,11 @@ def demo_risk_monitor():
     ]
 
      # Process each disruption
-    print("\n📊 Processing Disruptions...\n")
+    print("\nProcessing Disruptions...\n")
     for disruption in sample_disruptions:
         alert = agent.monitor_disruption(disruption)
         
-        print(f"🚨 {alert['disruption']['title']}")
+        print(f"{alert['disruption']['title']}")
         print(f"   Severity: {alert['disruption']['severity']}")
         print(f"   Risk Score: {alert['risk_assessment']['risk_score']}/100")
         print(f"   Urgency: {alert['urgency']}")
@@ -326,7 +326,7 @@ def demo_risk_monitor():
     # Generate summary report
     print("=" * 60)
     report = agent.generate_summary_report()
-    print("\n📈 SUMMARY REPORT")
+    print("\nSUMMARY REPORT")
     print(f"Total Active Disruptions: {report['summary']['total_active_disruptions']}")
     print(f"Critical Alerts: {report['summary']['critical_alerts']}")
     print(f"High Alerts: {report['summary']['high_alerts']}")
